@@ -26,7 +26,6 @@ class ConstitutionHelper:
 
     @staticmethod
     def split_into_sentences(text):
-        # Using regex to split text into sentences
         sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
         return sentences
 

@@ -25,8 +25,17 @@ class ConstitutionHelper:
 
     @staticmethod
     def split_into_sentences(text):
-        sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
+        sentences = []
+        current_sentence = ""
+        for char in text:
+            current_sentence += char
+            if char in ['.', '?']:
+                sentences.append(current_sentence.strip())
+                current_sentence = ""
+        if current_sentence:
+            sentences.append(current_sentence.strip())
         return sentences
+
 
     @staticmethod
     def filter_matching_sentences(sentences, search_text):

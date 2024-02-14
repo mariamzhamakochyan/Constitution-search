@@ -1,6 +1,6 @@
-import sys, gensim
+import sys
+import gensim
 import gensim.downloader as api
-
 
 class ConstitutionHelper:
     def __init__(self, filename):

@@ -1,4 +1,3 @@
-# constitution_helper.py
 import sys
 import re
 import gensim.downloader as api

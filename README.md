@@ -19,5 +19,6 @@ Replace "Your search text" with the text you want to search for in the constitut
 
 ## Requirements
 
-. Python 3.x
-. Gensim library (install using pip install gensim)
+Python 3.x
+
+Gensim library (install using pip install gensim)

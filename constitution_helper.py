@@ -59,7 +59,7 @@ class ConstitutionHelper:
         search_text_tokens = gensim.utils.simple_preprocess(search_text)
         search_text_tokens = [token for token in search_text_tokens if token in word_vectors.key_to_index]
         if not search_text_tokens:
-            print("No matching tokens found in vocabulary.")
+            print("No matches")
             return []
         search_vector = sum(word_vectors.get_vector(word) for word in search_text_tokens) / len(search_text_tokens)
         closest_sentence = None
@@ -74,7 +74,7 @@ class ConstitutionHelper:
                     max_similarity = similarity
                     closest_sentence = sentence
             else:
-                print(f"No matching tokens found in vocabulary for sentence: {sentence}")
+                print(f"No matchesfor sentence: {sentence}")
         return closest_sentence
 
 if __name__ == "__main__":

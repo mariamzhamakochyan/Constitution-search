@@ -9,11 +9,11 @@ This program allows users to find matching sentences from a given constitution f
    ```bash
    git clone https://github.com/mariamzhamakochyan/Constitution-search.git
 Navigate to the project directory:
-bash
-Copy code
+   ```bash
+   Copy code
 cd constitution-search
 Run the program:
-bash
+   ```bash
 Copy code
 python constitution_helper.py find "Your search text"
 Replace "Your search text" with the text you want to search for in the constitution.

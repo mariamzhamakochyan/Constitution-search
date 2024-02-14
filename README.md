@@ -7,7 +7,7 @@ This program allows users to find matching sentences from a given constitution f
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/constitution-search.git
+   git clone https://github.com/mariamzhamakochyan/Constitution-search.git
 Navigate to the project directory:
 bash
 Copy code

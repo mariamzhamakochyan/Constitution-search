@@ -17,7 +17,7 @@ This program allows users to find matching sentences from a given constitution f
 
 Replace "Your search text" with the text you want to search for in the constitution.
 
-Requirements
+## Requirements
 
 Python 3.x
 Gensim library (install using pip install gensim)

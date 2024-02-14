@@ -10,7 +10,7 @@ This program allows users to find matching sentences from a given constitution f
    git clone https://github.com/mariamzhamakochyan/Constitution-search.git
 2. Navigate to the project directory:
    ```bash
-   cd constitution-search
+   cd Constitution-search
 3. Run the program:
    ```bash
     python constitution_helper.py find "Your search text"

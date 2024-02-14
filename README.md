@@ -8,7 +8,7 @@ This program allows users to find matching sentences from a given constitution f
 
    ```bash
    git clone https://github.com/mariamzhamakochyan/Constitution-search.git
-Navigate to the project directory:
+2. Navigate to the project directory:
    ```bash
    cd constitution-search
-Run the program:
+3. Run the program:

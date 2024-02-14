@@ -1,7 +1,6 @@
-import sys
-import re
+import sys, gensim
 import gensim.downloader as api
-import gensim
+
 
 class ConstitutionHelper:
     def __init__(self, filename):
@@ -57,16 +56,12 @@ class ConstitutionHelper:
     @staticmethod
     def find_closest_sentences(search_text, matching_sentences):
         word_vectors = api.load("glove-wiki-gigaword-100")
-        
         search_text_tokens = gensim.utils.simple_preprocess(search_text)
-        
         search_text_tokens = [token for token in search_text_tokens if token in word_vectors.key_to_index]
-        
         if not search_text_tokens:
             print("No matching tokens found in vocabulary.")
             return []
         search_vector = sum(word_vectors.get_vector(word) for word in search_text_tokens) / len(search_text_tokens)
-        
         closest_sentence = None
         max_similarity = -1
         for sentence in matching_sentences:
@@ -80,7 +75,6 @@ class ConstitutionHelper:
                     closest_sentence = sentence
             else:
                 print(f"No matching tokens found in vocabulary for sentence: {sentence}")
-        
         return closest_sentence
 
 if __name__ == "__main__":
